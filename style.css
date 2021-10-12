@@ -1,0 +1,38 @@
+body{
+    background-size: cover;
+}
+.dsi
+{
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+}
+.dbi
+{
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+}
+.div_speed
+{
+    float: left;
+}
+.div_volume
+{
+    float: right;
+}
+.pb
+{
+    height: 100px;
+    width: 200px;
+    font-size: x-large;
+}
+.f
+{
+    background-color: aliceblue;
+}
+canvas
+{
+    border-radius: 20px;
+    margin-top: 100px;
+}
