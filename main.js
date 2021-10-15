@@ -1,9 +1,10 @@
 song = "";
+
 function preload()
 {
-    song = loadSound("music.mp3");
+song = loadSound("music.mp3"); 
+song1 = loadSound("to max.mp3");
 }
-
 
 
 function setup()
@@ -48,12 +49,6 @@ function gotpo(results)
     }
 }
 
-function play()
-{
-    song.play();
-    song.setVolume(1);
-    song.rate(2);
-}
 
 
 function draw()
@@ -61,8 +56,17 @@ function draw()
     image(video, 0, 0, 600, 500);
     fill("red");
     stroke("red");
-    if(slw>0.2)
+
+    if(srw>0.2)
     {
-        circle(rightWrist)
+        circle(rwx, rwy, 20);
+        song1.stop()
+        song.play();
+    }
+    else if(slw>0.2)
+    {
+        circle(lwx, lwy, 20);
+        song.stop();
+        song1.play();
     }
 }
